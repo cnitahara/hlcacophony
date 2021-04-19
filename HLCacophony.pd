@@ -1,4 +1,4 @@
-#N canvas 189 554 700 615 12;
+#N canvas 621 564 700 615 12;
 #N canvas 905 360 286 207 clock 0;
 #X obj 34 87 receive mastertempo;
 #X obj 129 45 receive masteron;
@@ -7,7 +7,7 @@
 #X connect 0 0 2 0;
 #X connect 1 0 3 0;
 #X restore 101 396 pd clock;
-#N canvas 996 235 679 616 loadsound0 1;
+#N canvas 996 235 679 616 loadsound0 0;
 #X obj 70 35 bng 15 250 50 0 empty empty choose_file 17 7 0 10 -262144
 -1 -1;
 #X obj 71 55 openpanel;
@@ -22235,7 +22235,7 @@
 -1 -1;
 #X floatatom 453 341 10 0 0 0 - - -;
 #X obj 209 545 dac~;
-#X obj 274 311 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 274 311 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 372 349 t b f;
 #X obj 298 399 *;
@@ -54634,7 +54634,7 @@
 #X obj 209 27 cnv 20 400 320 canvas rcv-canvas empty 20 12 0 14 -233017
 -66577 0;
 #X obj 245 88 vsl 30 80 0 2 0 0 volume1 loaded-sound1 volume 0 -9 0
-10 -260097 -262144 -1 0 1;
+10 -260097 -262144 -1 7900 1;
 #X obj 263 53 tgl 15 0 loopon1 rcv-loopon1 alert 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 284 88 vsl 30 80 0.5 1 0 0 pitch1 loaded-sound1 pitch 0 -9 0
@@ -54696,17 +54696,17 @@
 #X obj 30 27 cnv 15 160 320 canvas rcv-canvas empty 20 12 0 14 -191407
 -66577 0;
 #X obj 45 62 tgl 80 0 masteron rcv-masteron ON/OFF 17 7 0 10 -260097
--1 -262144 0 1;
+-1 -262144 1 1;
 #X obj 135 60 vsl 30 80 0.5 3 0 0 mastertempo rcv-mastertempo speed
-0 -9 0 10 -99865 -260097 -1 0 1;
-#X obj 90 230 vsl 30 80 0 2.5 0 0 volume0 loaded-sound0 volume 0 -9
+0 -9 0 10 -99865 -260097 -1 4000 1;
+#X obj 90 230 vsl 30 80 0 10 0 0 volume0 loaded-sound0 volume 0 -9
 0 10 -260097 -262144 -1 0 1;
 #X obj 69 190 tgl 15 0 loopon0 rcv-loopon0 count 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 135 230 vsl 30 80 0 1.2 0 0 pitch0 loaded-sound0 pitch 0 -9
+-1 -1 1 1;
+#X obj 135 230 vsl 30 80 0.05 1 0 0 pitch0 loaded-sound0 pitch 0 -9
 0 10 -99865 -260097 -1 0 1;
-#X obj 48 230 vsl 30 80 0 3 0 0 length0 loaded-sound0 length 0 -9 0
-10 -33289 -260097 -1 0 1;
+#X obj 48 230 vsl 30 80 0.5 2 0 0 length0 loaded-sound0 length 0 -9
+0 10 -33289 -260097 -1 0 1;
 #X text 42 36 HL Cacophony;
 #X obj 48 190 bng 15 250 50 0 loaded-sound0 rcv-loaded-sound0 empty
 17 7 0 10 -262144 -1 -1;
