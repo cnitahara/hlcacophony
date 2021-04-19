@@ -22235,7 +22235,7 @@
 -1 -1;
 #X floatatom 453 341 10 0 0 0 - - -;
 #X obj 209 545 dac~;
-#X obj 274 311 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 274 311 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 372 349 t b f;
 #X obj 298 399 *;
@@ -54696,18 +54696,18 @@
 #X obj 30 27 cnv 15 160 320 canvas rcv-canvas empty 20 12 0 14 -191407
 -66577 0;
 #X obj 45 62 tgl 80 0 masteron rcv-masteron ON/OFF 17 7 0 10 -260097
--1 -262144 1 1;
+-1 -262144 0 1;
 #X obj 135 60 vsl 30 80 0.5 3 0 0 mastertempo rcv-mastertempo speed
 0 -9 0 10 -99865 -260097 -1 0 1;
 #X obj 90 230 vsl 30 80 0 2.5 0 0 volume0 loaded-sound0 volume 0 -9
 0 10 -260097 -262144 -1 0 1;
 #X obj 69 190 tgl 15 0 loopon0 rcv-loopon0 count 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 135 230 vsl 30 80 0 1.2 0 0 pitch0 loaded-sound0 pitch 0 -9
 0 10 -99865 -260097 -1 0 1;
 #X obj 48 230 vsl 30 80 0 3 0 0 length0 loaded-sound0 length 0 -9 0
 10 -33289 -260097 -1 0 1;
-#X text 44 35 HL Cacophony;
+#X text 42 36 HL Cacophony;
 #X obj 48 190 bng 15 250 50 0 loaded-sound0 rcv-loaded-sound0 empty
 17 7 0 10 -262144 -1 -1;
 #X connect 0 0 1 0;
@@ -54724,4 +54724,4 @@
 #X connect 0 1 6 1;
 #X connect 0 1 4 1;
 #X connect 0 1 7 1;
-#X coords 0 -1 1 1 85 60 1 100 100;
+#X coords 0 615 1 614 85 60 0;
